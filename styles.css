@@ -1,0 +1,282 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "Segoe UI", system-ui, sans-serif;
+  background: #fafafa;
+  color: #232323;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #111111;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: #ffffff;
+  padding: 0.3rem 0.5rem;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  color: #ffd166;
+}
+
+.hero {
+  padding: 5rem 0 3rem;
+  background: linear-gradient(135deg, #2b2d42 0%, #444b6e 100%);
+  color: #f8f9fa;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: #ffd166;
+  color: #111111;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.18);
+  color: #f8f9fa;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.about-summary,
+.page-content {
+  padding: 4rem 0;
+}
+
+.about-summary h2,
+.page-content h1,
+.resume-section h2,
+.service-card h2,
+.contact-details h2 {
+  margin-top: 0;
+}
+
+.feature-grid,
+.project-grid,
+.service-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feature-grid article,
+.project-card,
+.service-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-image {
+  height: 180px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ffd166 0%, #ef476f 100%);
+  display: grid;
+  place-items: center;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.resume-section,
+.contact-details,
+.contact-form {
+  margin-top: 2rem;
+}
+
+.resume-section ul {
+  padding-left: 1.2rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item {
+  padding: 1.2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.contact-details {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.contact-details div {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #dde2e7;
+  border-radius: 0.8rem;
+  font: inherit;
+}
+
+.site-footer {
+  background: #111111;
+  color: #d8d8d8;
+  padding: 1.75rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #d8d8d8;
+}
+
+/* CSS 語法 */
+.img-container {
+    width: 300px;  /* 設定框的寬度 */
+    height: 200px; /* 設定框的高度 */
+    overflow: hidden; /* 超出的部分隱藏 */
+    border-radius: 10px; /* 如果想要圓角 */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    /* 關鍵語法：保持比例填滿，多餘的會被自動裁切 */
+    object-fit: cover; 
+    /* 選擇裁切中心點，預設是中心 (center center) */
+    object-position: center; 
+}
+
+
+@media (max-width: 760px) {
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hero {
+    padding-top: 4rem;
+  }
+}
